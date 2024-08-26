@@ -15,6 +15,7 @@ return {
       filetypes = { 'yaml.ansible' }
     })
     lspconfig["bashls"].setup({})
+    lspconfig["gopls"].setup({})
     lspconfig["helm_ls"].setup({})
     lspconfig["jsonls"].setup({})
     lspconfig["lua_ls"].setup({})

@@ -1,0 +1,23 @@
+[font]
+size = 9
+
+# size 9 for ultrawide at work.
+# 8.5 / 0 / 0 works nicely too for MBP screen
+
+
+[font.normal]
+family = "FiraCode Nerd Font"
+# family = "Cascadia Mono NF"
+#family = "Cascadia Code NF"
+style = "Light"
+
+[font.offset]
+x = 0
+y = 0
+
+# 0 / 0 for ultrawide at work.
+# 0 / 1 for MBP screen
+# 1 / 1 for home 27" 4k
+
+[scrolling]
+history = 20000

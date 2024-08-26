@@ -73,3 +73,12 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   end
   }
 )
+
+-- Stop smart indent for Golang because it ain't that smart.
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = {'go'},
+  callback = function()
+    vim.opt.indentexpr = ''
+  end
+  }
+)
