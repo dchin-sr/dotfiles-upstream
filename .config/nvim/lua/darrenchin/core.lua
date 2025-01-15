@@ -11,6 +11,7 @@ vim.opt.list = true
 vim.opt.listchars = 'eol:❮,tab:❯\\'
 vim.opt.mouse = ''
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.signcolumn = 'yes'
 vim.opt.smartcase = true
