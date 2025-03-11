@@ -11,7 +11,7 @@ vim.opt.list = true
 vim.opt.listchars = 'eol:❮,tab:❯\\'
 vim.opt.mouse = ''
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
 vim.opt.signcolumn = 'yes'
 vim.opt.smartcase = true
@@ -83,3 +83,7 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   end
   }
 )
+
+-- Remap Copilot commands
+vim.api.nvim_set_keymap('i', '<C-j>', '<Plug>(copilot-next)', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-k>', '<Plug>(copilot-previous)', { noremap = true, silent = true })

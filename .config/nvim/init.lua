@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require('darrenchin.core')
 
 -- Setup the plugins
-require("lazy").setup({ { import = "darrenchin.plugins" }, { import = "darrenchin.plugins.lsp" } }, {
+require("lazy").setup({ { import = "darrenchin.plugins" }, { import = "darrenchin.plugins.lsp" }, "github/copilot.vim" }, {
   install = {
     colorscheme = { "nightfly" },
   },
