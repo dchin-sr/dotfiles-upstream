@@ -87,3 +87,10 @@ vim.api.nvim_create_autocmd({'FileType'}, {
 -- Remap Copilot commands
 vim.api.nvim_set_keymap('i', '<C-j>', '<Plug>(copilot-next)', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-k>', '<Plug>(copilot-previous)', { noremap = true, silent = true })
+
+-- Shortcuts for Telescope
+vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope live_grep<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fd', ':Telescope diagnostics<CR>', { noremap = true, silent = true })
